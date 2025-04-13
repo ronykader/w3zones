@@ -220,13 +220,13 @@ export default function Technologies() {
                 className="group"
               >
                 <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                  <div className="relative w-16 h-16 mb-3">
+                  <div className="relative w-16 h-16">
                     <Image
                       src={tech.logo}
                       alt={tech.name}
-                      fill
-                      className="object-contain p-2"
-                      sizes="(max-width: 64px) 100vw, 64px"
+                      width={64}
+                      height={64}
+                      className="object-contain"
                     />
                   </div>
                   <span className="text-sm font-medium text-gray-900 text-center">

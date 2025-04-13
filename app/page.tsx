@@ -1,6 +1,5 @@
 "use client";
 
-// import CallToAction from "@/components/CallToAction";
 import CallToAction from "./components/CallToAction";
 import DevelopmentProcess from "./components/DevelopmentProcess";
 import FeaturedProjects from "./components/FeaturedProjects";
