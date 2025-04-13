@@ -18,6 +18,12 @@ const staggerContainer = {
   },
 };
 
+type Technology = {
+  name: string;
+  logo: string;
+  level: string;
+};
+
 const technologies = [
   {
     category: "Frontend Development",
@@ -167,9 +173,12 @@ const technologies = [
 
 export default function Technologies() {
   // Combine all technologies into a single array
-  const allTechnologies = technologies.reduce((acc, category) => {
-    return [...acc, ...category.technologies];
-  }, []);
+  const allTechnologies = technologies.reduce(
+    (acc: { name: string; logo: string; level: string }[], category) => {
+      return [...acc, ...category.technologies];
+    },
+    []
+  );
 
   return (
     <section className="py-20 bg-white">

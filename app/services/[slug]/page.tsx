@@ -1,5 +1,4 @@
 "use client";
-s;
 import Footer from "@/app/components/Footer";
 import Navbar from "@/app/components/Navbar";
 import { motion } from "framer-motion";
